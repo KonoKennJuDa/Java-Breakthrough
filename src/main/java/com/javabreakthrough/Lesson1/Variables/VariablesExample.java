@@ -1,4 +1,4 @@
-package com.javabreakthrough.variables;
+package com.javabreakthrough.Lesson1.Variables;
 
 public class VariablesExample {
 
