@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson1.Cycles;
+package com.javabreakthrough.Lesson3.Cycles;
 
 public class Cycles {
 

@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson1.Operators;
+package com.javabreakthrough.Lesson2.Operators;
 
 public class Operators {
 
