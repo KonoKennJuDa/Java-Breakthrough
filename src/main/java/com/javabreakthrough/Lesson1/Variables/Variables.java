@@ -38,7 +38,7 @@ public class Variables {
          */
 
         //String
-        String name = "Анна";
+        String name = "Анна"; // String также является классом
         //Массивы
         int[] numbers = {1, 2, 3};
         //Классы
