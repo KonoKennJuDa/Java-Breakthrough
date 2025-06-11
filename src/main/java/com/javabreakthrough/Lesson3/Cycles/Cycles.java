@@ -9,9 +9,9 @@ public class Cycles {
          */
 
         int i = 0;
-        while (i < 5) {
+        while (i < 5) {     // Пока While будет True, цикл будет повторяться
             System.out.println(i);
-            i++;
+            i++;            // Инкремент - увеличение на единицу
         }
 
         /**
@@ -28,8 +28,10 @@ public class Cycles {
          * Цикл for.
          */
 
-        for (int ii = 0; ii < 5; i++) {
-            System.out.println(i);
+        for (int ii = 0; ii < 5; ii++) {     // Первая часть - декларируется и инициализируется переменная-счетчик
+                                            // Вторая часть - условие
+                                            // Третья часть - изменения, в данном случае инкремент ++
+            System.out.println(ii);
         }
 
         /**
