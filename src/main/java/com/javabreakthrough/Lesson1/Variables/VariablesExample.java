@@ -16,5 +16,6 @@ public class VariablesExample {
         System.out.println(name + ", возраст: " + age + ", температура тела: " + temperature);
         System.out.println("Вес: " + weight + " кг");
         System.out.println("Студент: " + isStudent);
+
     }
 }
