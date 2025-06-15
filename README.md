@@ -2,3 +2,6 @@
 
 # Java Breakthrough
 Мой путь от нуля до Java-разработчика под менторством AI.
+
+Литература:
+Курс Alishev на YouTube
