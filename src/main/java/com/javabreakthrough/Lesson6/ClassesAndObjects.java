@@ -10,6 +10,8 @@ public class ClassesAndObjects {
         person.age = 50;
         // System.out.println("Меня зовут " + person.name + ", " + "мне " + person.age + " лет");
         person.speak(); // Мы перенесли функционал, который делается постоянно, в метод
+        int year = person.calculateYearsToRetirement();
+        System.out.println("До пенсии " + year + " лет");
 
         System.out.println();
 
@@ -19,6 +21,8 @@ public class ClassesAndObjects {
         // System.out.println("Меня зовут " + person1.name + ", " + "мне " + person1.age + " лет");
         person1.speak();
         person1.sayHello();
+        int year1 = person1.calculateYearsToRetirement();
+        System.out.println("До пенсии " + year1 + " лет");
     }
 }
 
@@ -30,7 +34,13 @@ class Person {
     String name;
     int age;
 
-    void speak() {
+    int calculateYearsToRetirement() { // Возвращает переменную int, которую мы можем присвоить и использовать далее
+        int years = 65 - age;
+        // String s = "Привет"; мы не сможем вернуть строку, потому что метод int типа
+        return years; // Сразу выходит из метода, метод на нем завершается
+    }
+
+    void speak() { // void - значит, что метод ничего не возвращает
         for (int i = 0; i < 3; i++) { // Просто по фану прикрутили цикл, чтобы выводилось три раза
             System.out.println("Меня зовут " + name + ", мне " + age + " лет.");
         }
@@ -39,4 +49,5 @@ class Person {
     void sayHello() { // Этому методы данные не нужны. У всех этот метод будет вызываться одинаково
         System.out.println("Привет!");
     }
+
 }
