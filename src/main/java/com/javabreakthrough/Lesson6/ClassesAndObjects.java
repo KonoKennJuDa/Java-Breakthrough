@@ -31,7 +31,7 @@ public class ClassesAndObjects {
         System.out.println();
 
         Person person2 = new Person();
-        person2.setNameAndSetAge("Андрей", 30);
+        person2.setNameAndAge("Андрей", 30);
         person2.speak();
         person2.sayHello();
         int year2 = person2.calculateYearsToRetirement();
@@ -39,7 +39,7 @@ public class ClassesAndObjects {
     }
 }
 
-// class - вложенные класс
+// class - вложенный класс
 class Person {
     // У класса могут быть:
     // 1. Данные (поля)
@@ -55,7 +55,7 @@ class Person {
         age = userage;
     }
 
-    void setNameAndSetAge(String username, int userage) { // метод может вмещать в себя несколько параметров
+    void setNameAndAge(String username, int userage) { // метод может вмещать в себя несколько параметров
         name = username;
         age = userage;
     }
