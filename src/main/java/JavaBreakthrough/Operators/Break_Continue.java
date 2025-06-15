@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson2.Operators;
+package JavaBreakthrough.Operators;
 
 public class Break_Continue {
 

@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson1.HelloWorld;
+package JavaBreakthrough.HelloWorld;
 
 public class HelloWorld {
 

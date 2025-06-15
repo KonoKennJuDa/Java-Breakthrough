@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson1.Variables;
+package JavaBreakthrough.Variables;
 
 import java.util.Arrays;
 import java.util.List;

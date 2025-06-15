@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson3.Cycles;
+package JavaBreakthrough.Cycles;
 
 import java.util.Scanner;
 

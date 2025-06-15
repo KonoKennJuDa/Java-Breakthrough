@@ -1,4 +1,4 @@
-package com.javabreakthrough.Lesson5.Arrays;
+package JavaBreakthrough.Arrays;
 
 public class Arrays_of_Strings {
 
