@@ -1,4 +1,4 @@
-package JavaBreakthrough.ClassesAndObject;
+package JavaBreakthrough.ClassesAndObjects;
 
 // public - главный класс
 public class ClassesAndObjects {
