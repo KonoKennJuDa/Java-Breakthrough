@@ -1,6 +1,6 @@
 package JavaBreakthrough.AbstractExtendsInterfaceExp;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     // Это уже я балуюсь и решил создать конструктор, чтобы можно было назначить имя и возраст
     // Переменные наследуются от родительского класса
@@ -19,4 +19,5 @@ public class Cat extends Animal{
     public String toString() {
         return name + ", " + age;
     }
+
 }
