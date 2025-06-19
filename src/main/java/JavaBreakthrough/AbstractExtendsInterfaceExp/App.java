@@ -8,6 +8,8 @@ public class App {
         animal.eat();
         animal.sleep();
         animal.speak();
+        System.out.println(animal); // Тут я не переопределил ToString, из-за этого выводится каша + нет назначенного имени и возраста
+        // Вернулись бы нулевые значения или NullPointException, скорее второе
 
         System.out.println();
 
@@ -15,6 +17,7 @@ public class App {
         dog.eat();
         dog.sleep();
         dog.speak();
+        System.out.println("Имя и возраст: " + dog);
 
         System.out.println();
 
@@ -22,6 +25,7 @@ public class App {
         cat.eat();
         cat.sleep();
         cat.speak();
+        System.out.println("Имя и возраст: " + cat);
     }
 
 
