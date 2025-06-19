@@ -1,4 +1,4 @@
-package JavaBreakthrough.Arrays;
+package JavaBreakthrough.ArraysExp;
 
 public class Multidimensional_Arrays {
 

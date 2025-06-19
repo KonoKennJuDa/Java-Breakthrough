@@ -1,4 +1,4 @@
-package JavaBreakthrough.Input;
+package JavaBreakthrough.InputExp;
 
 import java.util.Scanner;
 

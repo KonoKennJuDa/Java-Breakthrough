@@ -1,4 +1,4 @@
-package JavaBreakthrough.This;
+package JavaBreakthrough.ThisExp;
 
 public class Human {
 

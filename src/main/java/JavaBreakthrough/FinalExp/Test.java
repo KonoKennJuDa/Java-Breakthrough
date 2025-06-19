@@ -1,4 +1,4 @@
-package JavaBreakthrough.Final;
+package JavaBreakthrough.FinalExp;
 
 public class Test {
 

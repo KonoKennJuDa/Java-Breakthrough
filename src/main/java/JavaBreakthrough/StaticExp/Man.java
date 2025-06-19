@@ -1,4 +1,4 @@
-package JavaBreakthrough.Static;
+package JavaBreakthrough.StaticExp;
 
 public class Man {
 
