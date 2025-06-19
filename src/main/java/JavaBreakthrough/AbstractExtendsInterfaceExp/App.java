@@ -11,14 +11,14 @@ public class App {
 
         System.out.println();
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("Max", 4);
         dog.eat();
         dog.sleep();
         dog.speak();
 
         System.out.println();
 
-        Cat cat = new Cat();
+        Cat cat = new Cat("Barsik", 3);
         cat.eat();
         cat.sleep();
         cat.speak();
