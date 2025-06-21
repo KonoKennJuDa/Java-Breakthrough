@@ -1,4 +1,4 @@
-package JavaBreakthrough.AbstractExtendsInterfaceExp;
+package JavaBreakthrough.AbstractExtendsInterfaceExp.ExtendsExp;
 
 public class App {
 
