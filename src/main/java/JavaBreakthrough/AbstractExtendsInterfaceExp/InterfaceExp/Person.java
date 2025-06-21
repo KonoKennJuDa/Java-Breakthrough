@@ -7,7 +7,7 @@ public class Person {
         this.name = name;
     }
 
-    public void sayHello () {
+    public void sayHello() {
         System.out.println("Hello");
     }
 }
