@@ -1,6 +1,7 @@
 package JavaBreakthrough.AbstractExtendsInterfaceExp.InterfaceExp;
 
 public class Person implements Info {
+
     public String name;
 
     public Person(String name) {
