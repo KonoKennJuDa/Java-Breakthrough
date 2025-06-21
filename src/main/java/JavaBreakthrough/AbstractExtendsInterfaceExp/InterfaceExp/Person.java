@@ -1,6 +1,6 @@
 package JavaBreakthrough.AbstractExtendsInterfaceExp.InterfaceExp;
 
-public class Person {
+public class Person implements Info {
     public String name;
 
     public Person(String name) {
@@ -10,4 +10,10 @@ public class Person {
     public void sayHello() {
         System.out.println("Hello");
     }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Name is: " + name);
+    }
+
 }

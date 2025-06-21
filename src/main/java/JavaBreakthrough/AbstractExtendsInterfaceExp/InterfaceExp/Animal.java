@@ -1,6 +1,6 @@
 package JavaBreakthrough.AbstractExtendsInterfaceExp.InterfaceExp;
 
-public class Animal {
+public class Animal implements Info {
 
     public int id;
 
@@ -11,4 +11,10 @@ public class Animal {
     public void sleep() {
         System.out.println("i'm sleeping");
     }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Id is: " + id);
+    }
+
 }
