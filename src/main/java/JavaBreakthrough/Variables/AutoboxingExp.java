@@ -7,7 +7,7 @@ public class AutoboxingExp {
         int x = 1; // Если нужно просто число, то используется просто примитив
 
         // Integer x1 = new Integer(123); так делается в редких случаях. Используется если нужен метод класса примитива
-        Integer.parseInt("123");
+        Integer.parseInt("123"); // Из String в ing
 
         // Double, Float, Long, Integer, Short, Byte, Character и Boolean - обертки
         // Обертки нужны для большего функционала, если мы хотим что-то сделать с переменной и использовать методы внутри классов каждой обертки
