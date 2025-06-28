@@ -1,16 +1,26 @@
 package JavaBreakthrough.OutputExp;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class ReadingFromFile {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
-        File file = new File();
+        // Мы у класса File вызываем константу separator
+        String separator = File.separator;
+        // Путь к файлу присваиваем к переменной
+        String path = separator + "Users" + separator + "Saccaggi" + separator + "Desktop";
 
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        File file = new File(path);
+
+        Scanner scanner = new Scanner(file);
+        while (scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+        }
+        scanner.close();
+
 
         // Продолжу вечером
     }
