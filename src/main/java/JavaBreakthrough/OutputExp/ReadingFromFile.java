@@ -11,7 +11,7 @@ public class ReadingFromFile {
         // Мы у класса File вызываем константу separator
         String separator = File.separator;
         // Путь к файлу присваиваем к переменной
-        String path = separator + "Users" + separator + "Saccaggi" + separator + "Desktop";
+        String path = separator + "C:" + separator + "Users" + separator + "Saccaggi" + separator + "Desktop" + separator + "Text.txt";
 
         File file = new File(path);
 
@@ -22,6 +22,6 @@ public class ReadingFromFile {
         scanner.close();
 
 
-        // Продолжу вечером
+
     }
 }
