@@ -11,6 +11,7 @@ public class ExceptionsExpApp {
         File file = new File("asdf");
         Scanner scanner = new Scanner(file); // Тут Exception
 
-        // Все это уже завтра
+
+
     }
 }
