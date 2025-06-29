@@ -20,6 +20,20 @@ public class ExceptionsExpApp {
         }
         System.out.println("После блока try catch");
 
+        System.out.println();
+
+        try {
+            readFile();
+        } catch (FileNotFoundException exception) {
+            System.out.println("Обработка исключения в методе main");
+        }
+
+    }
+
+    public static void readFile() throws FileNotFoundException {
+        File file = new File("sssss");
+
+        Scanner scanner = new Scanner(file);
 
     }
 }
