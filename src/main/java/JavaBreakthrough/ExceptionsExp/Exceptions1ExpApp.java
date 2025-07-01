@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ExceptionsExpApp {
+public class Exceptions1ExpApp {
 
     public static void main(String[] args) { //throws FileNotFoundException
 

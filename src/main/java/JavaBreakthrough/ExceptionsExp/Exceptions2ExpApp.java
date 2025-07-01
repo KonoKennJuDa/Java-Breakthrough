@@ -1,9 +1,8 @@
 package JavaBreakthrough.ExceptionsExp;
 
-import java.io.IOException;
 import java.util.Scanner;
 
-public class Exception2ExpApp {
+public class Exceptions2ExpApp {
     public static void main(String[] args) throws ScannerException {
 
         // Сканер считывает введенные в консоль данные
