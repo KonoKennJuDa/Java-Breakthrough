@@ -29,6 +29,21 @@ public class EqualsExpApp {
         String string1 = "Hello";
 
         System.out.println(string.equals(string1));
+        System.out.println(string == string1); // так тоже работает, хоть IDE и ругается. Это работает, потому что есть String pool.
+        // Создается строка "Hello" и на нее ссылается переменная string
+        // Также когда создается переменная string1, то java видит, что она хочет присвоить объект такой же, и просто ссылает его на уже созданный такой же объект
+
+        System.out.println();
+
+        // Но можно создавать уникальные объекты для строк, даже если они одинаковые
+        String s = new String("Bye");
+        String s1 = new String("Bye");
+        // Эти два объекта одинаковые, но создаются отдельно. Каждая переменная ссылается на свой объект
+        System.out.println(s == s1); // такая запись уже не сработает в данном случае
+
+        String a = "Hi";
+        String b = "Hi123".substring(0,5);
+
 
     }
 }
