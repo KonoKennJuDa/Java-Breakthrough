@@ -25,7 +25,10 @@ public class EqualsExpApp {
         System.out.println();
 
         // Сравнение строк
+        String string = "Hello";
+        String string1 = "Hello";
 
+        System.out.println(string.equals(string1));
 
     }
 }
