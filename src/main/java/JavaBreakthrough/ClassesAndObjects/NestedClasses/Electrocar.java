@@ -13,6 +13,18 @@ public class Electrocar {
         }
     }
 
+    // Статический вложенный класс
+    // Не имеет доступа к переменным объекта класса
+    // Имеет мало общего с Electrocar
+    // Но имеет доступ к статическим переменным класса
+    // Нужен для использования извне
+    // Довольно распространенный тип вложенных классов
+    public static class Battery {
+        public void charge() {
+            System.out.println("Battery is charging");
+        }
+    }
+
     public Electrocar(int id) {
         this.id = id;
     }
@@ -21,6 +33,19 @@ public class Electrocar {
     public void start() {
         Motor motor = new Motor(); // как раз используем класс мотор, создаем объект и через него запускам метод
         motor.startMotor();
+
+        final int x = 1;
+
+        // Вложенный класс внутри метода. Схож с анонимный классом
+        // Имеет
+        class SomeClass {
+            public void someMetod() {
+                System.out.println(x);
+                System.out.println(id);
+            }
+        }
+
+        SomeClass someClass = new SomeClass();
 
         System.out.println("Electrocar " + id + " is starting");
     }
