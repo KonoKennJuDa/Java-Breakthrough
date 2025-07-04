@@ -1,4 +1,4 @@
-package JavaBreakthrough.AnonClasses;
+package JavaBreakthrough.ClassesAndObjects.AnonClasses;
 
 public interface AbleToEat {
 
