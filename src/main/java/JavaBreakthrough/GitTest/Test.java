@@ -5,6 +5,8 @@ public class Test {
 
         System.out.println("Привет, Git");
 
+        System.out.println("Сегодня ничего не успеваю, но завтра обязательно, хехе");
+
     }
 
 }
