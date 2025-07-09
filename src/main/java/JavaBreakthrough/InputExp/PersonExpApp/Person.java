@@ -1,6 +1,8 @@
 package JavaBreakthrough.InputExp.PersonExpApp;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable { // нужно имплементировать интерфейс Serializable, чтобы Java понимала, что это можно делать
 
     private int id;
     private String name;
@@ -30,4 +32,5 @@ public class Person {
     public String toString() {
         return id + " : " + name;
     }
+
 }
