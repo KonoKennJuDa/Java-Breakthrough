@@ -11,6 +11,8 @@ public class WriteObject {
         // Находятся в оперативной памяти во время исполнения программы, к ним нет доступа
         Person person1 = new Person(1, "Bob");
         Person person2 = new Person(2, "Mike");
+        // Также можно записывать массивы, для этого создадим массив
+        Person[] people = {new Person(3, "Artem"), new Person(4, "Tom")};
 
         // Сериализация. Чтобы записать наши объекты на жесткий диск и иметь к ним доступ
         try {
@@ -19,8 +21,16 @@ public class WriteObject {
             // ObjectOutputStream - предназначен для записи объектов, т.е. он более конкретный, но для работы ему нужен FileOutputStream
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
+            // Тут мы записываем объект
             oos.writeObject(person1);
             oos.writeObject(person2);
+
+            // Тут записываем массив, число объектов в массиве. Сначала будет записано число, после объект
+            oos.writeInt(people.length);
+            // Пройдемся по всем объектам в массиве Person и записываем их в файл
+            for (Person person : people) {
+                oos.writeObject(person);
+            }
 
             oos.close(); // обязательно надо закрыть stream
         } catch (IOException e) {

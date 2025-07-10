@@ -22,6 +22,14 @@ public class ReadObject {
             System.out.println(person1);
             System.out.println(person2);
 
+            // Читаем из файла массив объектов
+            int personCount = ois.readInt();
+            Person[] people = new Person[personCount];
+
+            for (int i = 0; i < personCount; i++) {
+                people[i] = (Person) ois.readObject();
+            }
+
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
