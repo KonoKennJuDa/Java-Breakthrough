@@ -25,6 +25,8 @@ public class ReadObject {
             System.out.println(person1);
             System.out.println(person2);
 
+            System.out.println();
+
             // Читаем из файла массив объектов
             int personCount = ois.readInt();
             // Массив, куда мы будем записывать считанные объекты
@@ -35,7 +37,16 @@ public class ReadObject {
                 // Обязательно нужно даункастить от Object до Person
                 people[i] = (Person) ois.readObject();
             }
+
+            // Выводим массив в консоль методов toString вызванным у класса Arrays
             System.out.println(Arrays.toString(people));
+
+            System.out.println();
+
+            // Массив куда записывается считанный массив, обязаткльно даункаст от Object до Person
+            Person[] people2 = (Person[]) ois.readObject();
+
+            System.out.println(Arrays.toString(people2));
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

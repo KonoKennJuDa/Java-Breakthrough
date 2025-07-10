@@ -13,6 +13,7 @@ public class WriteObject {
         Person person2 = new Person(2, "Mike");
         // Также можно записывать массивы, для этого создадим массив
         Person[] people = {new Person(3, "Artem"), new Person(4, "Tom")};
+        Person[] people2 = {new Person(5, "Artem2"), new Person(6, "Tom2")};
 
         // Сериализация. Чтобы записать наши объекты на жесткий диск и иметь к ним доступ
         try {
@@ -25,12 +26,21 @@ public class WriteObject {
             oos.writeObject(person1);
             oos.writeObject(person2);
 
+            System.out.println();
+
+            // Первый метод записывания массива. Буквально перебирая каждый объект в массиве
             // Тут записываем массив, число объектов в массиве. Сначала будет записано число, после объект
             oos.writeInt(people.length);
             // Пройдемся по всем объектам в массиве Person и записываем их в файл
             for (Person person : people) {
                 oos.writeObject(person);
             }
+
+            System.out.println();
+
+            // Второй метод записывания массива. Сразу записываем массив
+            // Более простой способ, работает по сути также, так как массив является объектом тоже
+            oos.writeObject(people2);
 
             oos.close(); // обязательно надо закрыть stream
         } catch (IOException e) {
