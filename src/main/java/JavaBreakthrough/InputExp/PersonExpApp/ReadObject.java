@@ -1,6 +1,9 @@
 package JavaBreakthrough.InputExp.PersonExpApp;
 
+import JavaBreakthrough.ArraysExp.ArraysExpApp;
+
 import java.io.*;
+import java.util.Arrays;
 
 public class ReadObject {
 
@@ -24,11 +27,15 @@ public class ReadObject {
 
             // Читаем из файла массив объектов
             int personCount = ois.readInt();
+            // Массив, куда мы будем записывать считанные объекты
             Person[] people = new Person[personCount];
 
+            // Цикл считывания
             for (int i = 0; i < personCount; i++) {
+                // Обязательно нужно даункастить от Object до Person
                 people[i] = (Person) ois.readObject();
             }
+            System.out.println(Arrays.toString(people));
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

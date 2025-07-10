@@ -1,6 +1,6 @@
 package JavaBreakthrough.ArraysExp;
 
-public class Arrays {
+public class ArraysExpApp {
 
     public static void main(String[] args) {
 
