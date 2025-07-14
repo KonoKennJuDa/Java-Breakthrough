@@ -19,5 +19,23 @@ public class EnumExpApp {
                 System.out.println("Это не животное");
         }
 
+        System.out.println();
+
+        //Как это работает? Object -> Enum -> Season наследование идет по такой логике
+        Season season = Season.SUMMER;
+        switch (season) {
+            case SUMMER -> System.out.println("Это лето");
+            case WINTER -> System.out.println("Это зима");
+        }
+
+        System.out.println(season.getClass());
+
+        System.out.println();
+
+        Animal animal1 = Animal.CAT;
+        System.out.println(animal1.getTranslation());
+        System.out.println(animal1);
+
+
     }
 }
