@@ -36,6 +36,10 @@ public class EnumExpApp {
         System.out.println(animal1.getTranslation());
         System.out.println(animal1);
 
+        System.out.println();
+
+        Season season1 = Season.WINTER;
+        System.out.println(season1.getTemperature());
 
     }
 }
