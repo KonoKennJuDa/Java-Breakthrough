@@ -1,5 +1,5 @@
 package JavaBreakthrough.EnumExp;
 
-public enum Seasons {
+public enum Season {
     SUMMER, WINTER, AUTUMN, SPRING
 }
