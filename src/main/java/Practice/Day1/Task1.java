@@ -6,7 +6,7 @@ public class Task1 {
 
         int counter = 0;
         while (counter < 10) {
-            System.out.println("Java");
+            System.out.print("Java");
             counter++;
         }
 
