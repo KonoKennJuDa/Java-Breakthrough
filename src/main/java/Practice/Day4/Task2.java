@@ -21,5 +21,25 @@ public class Task2 {
         }
         System.out.println(max);
 
+        int min = 10000;
+        for (int element : array) {
+            if (element < min)
+                min = element;
+        }
+        System.out.println(min);
+
+        int counter = 0;
+        for (int element : array) {
+            if (element % 10 == 0)
+                counter++;
+        }
+        System.out.println(counter);
+
+        int sum = 0;
+        for (int element : array) {
+            if (element % 10 == 0)
+                sum += element;
+        }
+        System.out.println(sum);
     }
 }
