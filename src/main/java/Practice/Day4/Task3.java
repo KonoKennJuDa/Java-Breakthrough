@@ -11,9 +11,23 @@ public class Task3 {
         Random random = new Random();
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
-             matrix[i][j] = random.nextInt();
+            for (int j = 0; j < matrix[i].length; j++) {
+             matrix[i][j] = random.nextInt(50);
             }
         }
+
+        int maxSum = 0;
+        int msxSumIdx = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            int sum = 0;
+            for (int j = 0; j < matrix[i].length; j++) {
+                sum += matrix[i][j];
+            }
+            if (sum >= maxSum) {
+                maxSum = sum;
+                msxSumIdx = i;
+            }
+        }
+        System.out.println(msxSumIdx);
     }
 }
