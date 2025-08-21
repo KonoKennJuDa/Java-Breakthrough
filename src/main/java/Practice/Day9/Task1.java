@@ -4,6 +4,15 @@ public class Task1 {
 
     public static void main(String[] args) {
 
+        Student student = new Student("Tom", "505");
+        Teacher teacher = new Teacher("Katy", "Computer Science");
+
+        System.out.println(student.getGroupName());
+        System.out.println(teacher.getSubjectName());
+
+        student.printInfo();
+        teacher.printInfo();
+
 
     }
 }
@@ -24,7 +33,7 @@ class Human {
     }
 
     public void printInfo() {
-        System.out.println("Это человек с именем" + name);
+        System.out.println("Это человек с именем " + name);
     }
 
 }
@@ -37,8 +46,40 @@ class Student extends Human {
         this.groupName = groupName;
     }
 
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Этот студент с именем " + getName());
+    }
 }
 
 class Teacher extends Human {
+    private String subjectName;
 
+    public Teacher(String name, String subjectName) {
+        super(name);
+        this.subjectName = subjectName;
+    }
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Этот преподаватель с именем " + getName());
+    }
 }
