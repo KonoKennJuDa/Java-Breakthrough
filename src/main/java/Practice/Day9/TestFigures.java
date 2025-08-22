@@ -8,3 +8,7 @@ public class TestFigures {
     }
 
 }
+
+abstract class Figure {
+
+}
