@@ -18,5 +18,11 @@ public class Task1 {
 
         System.out.println(list);
 
+        list.add(2, "Mercedes");
+
+        System.out.println(list);
+
+        list.removeFirst(); // Удаляет первый элемент из списка, но можно также написать list.remove(0); указать индекс элемента самому в общем
+
     }
 }
