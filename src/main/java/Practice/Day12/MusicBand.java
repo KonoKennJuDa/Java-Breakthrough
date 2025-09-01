@@ -37,12 +37,20 @@ class MusicBand {
         this.year = year;
     }
 
+    public static void transferMembers(MusicBand a, MusicBand b) {
+        for (String member : a.getMembers()) {
+            b.getMembers().add(member);
+        }
+        a.getMembers().clear();
+    }
+
+    public void printMembers() {
+        System.out.println(this.members);
+    }
+
     @Override
     public String toString() {
-        return "MusicBand{" +
-                "name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "MusicBand{" + "name='" + name + '\'' + ", year=" + year + '}';
     }
 
 }
