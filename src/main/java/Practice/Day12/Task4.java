@@ -15,7 +15,7 @@ public class Task4 {
         members1.add("Member5");
         members1.add("Member6");
 
-        MusicBand band1 = new MusicBand("band1", 1965, members1);
+        // MusicBand band1 = new MusicBand("band1", 1965, members1);
 
         List<String> members2 = new ArrayList<>();
         members2.add("Member7");
@@ -24,15 +24,15 @@ public class Task4 {
         members2.add("Member10");
         members2.add("Member11");
 
-        MusicBand band2 = new MusicBand("band2", 2005, members2);
+        // MusicBand band2 = new MusicBand("band2", 2005, members2);
 
-        band1.printMembers();
-        band2.printMembers();
-
-        MusicBand.transferMembers(band1,band2);
-
-        band1.printMembers();
-        band2.printMembers();
+//        band1.printMembers();
+//        band2.printMembers();
+//
+//        MusicBand.transferMembers(band1,band2);
+//
+//        band1.printMembers();
+//        band2.printMembers();
 
     }
 }
