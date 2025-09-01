@@ -18,13 +18,18 @@ public class Task4 {
         MusicBand band1 = new MusicBand("band1", 1965, members1);
 
         List<String> members2 = new ArrayList<>();
-        members2.add("Member1");
-        members2.add("Member2");
-        members2.add("Member3");
-        members2.add("Member4");
-        members2.add("Member5");
+        members2.add("Member7");
+        members2.add("Member8");
+        members2.add("Member9");
+        members2.add("Member10");
+        members2.add("Member11");
 
         MusicBand band2 = new MusicBand("band2", 2005, members2);
+
+        band1.printMembers();
+        band2.printMembers();
+
+        MusicBand.transferMembers(band1,band2);
 
         band1.printMembers();
         band2.printMembers();
